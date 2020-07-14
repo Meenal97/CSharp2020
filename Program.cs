@@ -26,10 +26,17 @@ namespace CSharpBasic
             b3.print();
             #endregion
 
-            #region
+            #region TryCatchFinallyBasic
             TryCatchFinally t = new TryCatchFinally();
             t.ReaderFromFile();
             #endregion
+
+            #region InterfaceBasic1
+            classA a = new classA();
+            a.details();
+            a.print();
+            #endregion
+
 
         }
     }
