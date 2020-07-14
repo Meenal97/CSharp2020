@@ -1,4 +1,5 @@
 ﻿using CSharpBasic.Oops;
+using CSharpBasic.TryCatch;
 using System;
 using System.IO;
 
@@ -23,6 +24,11 @@ namespace CSharpBasic
             #region MethodOverloading
             BaseClass3 b3 = new DerivedClass3();
             b3.print();
+            #endregion
+
+            #region
+            TryCatchFinally t = new TryCatchFinally();
+            t.ReaderFromFile();
             #endregion
 
         }

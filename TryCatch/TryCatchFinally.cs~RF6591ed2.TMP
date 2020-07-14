@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.IO;
+
+namespace CSharpBasic.TryCatch
+{
+    public class TryCatchFinally
+    {
+        
+        public void ReaderFromFile()
+        {
+            try
+            {
+                StreamReader streamReader = new StreamReader(@"C:\Users\Meenal\Documents\sample\Hello.txt");
+                Console.WriteLine(streamReader.ReadToEnd());
+                streamReader.Close()
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
+
+    }
+}
