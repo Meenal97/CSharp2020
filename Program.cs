@@ -15,9 +15,16 @@ namespace CSharpBasic
             b.print();
             #endregion
 
-
+            #region MethodHiding
             BaseClass2 b2 = new DerivedClass2();
             b2.print();
+            #endregion
+
+            #region MethodOverloading
+            BaseClass3 b3 = new DerivedClass3();
+            b3.print();
+            #endregion
+
         }
     }
 }
