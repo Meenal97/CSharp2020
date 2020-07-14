@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CSharpBasic.Oops;
+using System;
 
 namespace CSharpBasic
 {
@@ -7,6 +8,9 @@ namespace CSharpBasic
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            BaseClass b = new DerivedClass();
+            b.print();
         }
     }
 }
