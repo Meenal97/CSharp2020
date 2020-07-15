@@ -74,11 +74,22 @@ namespace CSharpBasic
             g.SetName("Meenal");
             Console.WriteLine("Get Name {0} ", g.GetName());
             g.SetID(100);
-            Console.WriteLine("Set ID {0}", g.GetID())
+            Console.WriteLine("Set ID {0}", g.GetID());
             #endregion
 
+            #region Properities
+            Console.WriteLine("-------------------------------------------------");
+            PropertiesInCsharp p = new PropertiesInCsharp();
+            p.Id = 100;
+            Console.WriteLine("ID {0}", p.Id);
+            p.Name = "Meenal";
+            Console.WriteLine("Name {0}", p.Name);
+            Console.WriteLine("PassMarks {0} ", p.PassMarks);
+            #endregion 
 
 
         }
     }
+
+ 
 }
