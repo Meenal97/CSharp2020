@@ -66,7 +66,17 @@ namespace CSharpBasic
 
             Name name2 = new Name("Meenal");
             name2.printName();
-            #endregion 
+            #endregion
+
+            #region GetterSetter
+            GetterSetter g = new GetterSetter();
+            Console.WriteLine("Pass Marks " + g.GetPassMarks());
+            g.SetName("Meenal");
+            Console.WriteLine("Get Name {0} ", g.GetName());
+            g.SetID(100);
+            Console.WriteLine("Set ID {0}", g.GetID())
+            #endregion
+
 
 
         }
