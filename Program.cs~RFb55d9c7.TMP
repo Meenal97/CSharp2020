@@ -50,7 +50,7 @@ namespace CSharpBasic
             b1.print();
             #endregion
 
-            #region Abstract Classes
+            #region
             studentclass s2 = new studentclass();
             s2.details();
             s2.print();
@@ -58,7 +58,7 @@ namespace CSharpBasic
             abstractClass a3 = new studentclass();
             a3.print();
             a3.details();
-            #endregion 
+            #endregion
 
 
         }
