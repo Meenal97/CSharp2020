@@ -38,20 +38,8 @@ namespace CSharpBasic
             a.print();
             #endregion
 
-            #region InterTypcasting, Interface reference varaible
             classAB ab = new classAB();
             ((IA)ab).print();
-            ((IB)ab).print();
-
-            IA a1 = new classAB();
-            a1.print();
-
-            IB b1 = new classAB();
-            b1.print();
-            #endregion
-
-
-
         }
     }
 }
