@@ -58,6 +58,14 @@ namespace CSharpBasic
             abstractClass a3 = new studentclass();
             a3.print();
             a3.details();
+            #endregion
+
+            #region Constrcutor
+            Name name = new Name();
+            name.printName();
+
+            Name name2 = new Name("Meenal");
+            name2.printName();
             #endregion 
 
 
