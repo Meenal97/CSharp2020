@@ -92,7 +92,6 @@ namespace CSharpBasic
             try1.Divide();
             #endregion
 
-            #region WhyEnums
             WhyEnums[] w = new WhyEnums[3];
             w[0] = new WhyEnums
             {
@@ -116,31 +115,13 @@ namespace CSharpBasic
             foreach(WhyEnums Customer in w)
             {
                 
-                Console.WriteLine("Name = {0} &&  Gender {1}" , Customer.Name, getGender(Customer.Gender) );
+                Console.WriteLine("Name = {0} &&  Gender {1}" , Customer.Name, Customer.Gender );
             }
-            #endregion
 
-
+            pun
 
         }
-
-        #region WhyEnumFunction
-        public static string getGender(int gender)
-        {
-            switch(gender)
-            {
-                case 0:
-                    return "Unknown";
-                case 1:
-                    return "Male";
-                case 2:
-                    return "Female";
-                default:
-                    return "Invalid data detected";
-            }
-        }
-        #endregion 
     }
 
-
+ 
 }
