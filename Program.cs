@@ -122,9 +122,9 @@ namespace CSharpBasic
 
             #region Line
             Console.WriteLine("____________________________________________________________________________________________________");
-            #endregion  
+            #endregion
 
-
+            #region Enum
             Enums[] e = new Enums[3];
             e[0] = new Enums
             {
@@ -150,6 +150,7 @@ namespace CSharpBasic
 
                 Console.WriteLine("Name = {0} &&  Gender {1}", Customer.Name, getGenderEnum(Customer.gender));
             }
+            #endregion
 
         }
 
@@ -168,10 +169,10 @@ namespace CSharpBasic
                     return "Invalid data detected";
             }
         }
-        #endregion 
+        #endregion
 
-  
 
+        #region EnumFunction
         public static string getGenderEnum(Gender gender)
         {
             switch (gender)
@@ -186,6 +187,7 @@ namespace CSharpBasic
                     return "Invalid data detected";
             }
         }
+        #endregion
 
     }
 
