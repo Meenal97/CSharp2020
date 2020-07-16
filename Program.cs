@@ -120,7 +120,36 @@ namespace CSharpBasic
             }
             #endregion
 
+            #region Line
+            Console.WriteLine("____________________________________________________________________________________________________");
+            #endregion  
 
+
+            Enums[] e = new Enums[3];
+            e[0] = new Enums
+            {
+                Name = "Mark",
+                gender = Gender.Male
+            };
+
+            e[1] = new Enums
+            {
+                Name = "mary",
+                gender = Gender.Female
+            };
+
+            e[2] = new Enums
+            {
+                Name = "Sam",
+                gender = Gender.Unknonw
+            };
+
+
+            foreach (Enums Customer in e)
+            {
+
+                Console.WriteLine("Name = {0} &&  Gender {1}", Customer.Name, getGenderEnum(Customer.gender));
+            }
 
         }
 
@@ -140,6 +169,24 @@ namespace CSharpBasic
             }
         }
         #endregion 
+
+  
+
+        public static string getGenderEnum(Gender gender)
+        {
+            switch (gender)
+            {
+                case Gender.Unknonw:
+                    return "Unknown";
+                case Gender.Male:
+                    return "Male";
+                case Gender.Female:
+                    return "Female";
+                default:
+                    return "Invalid data detected";
+            }
+        }
+
     }
 
 
