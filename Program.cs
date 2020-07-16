@@ -87,6 +87,9 @@ namespace CSharpBasic
             Console.WriteLine("PassMarks {0} ", p.PassMarks);
             #endregion 
 
+            AvoidTryCatchMissue try1 = new AvoidTryCatchMissue();
+            try1.Divide();
+
 
         }
     }
