@@ -20,7 +20,14 @@ namespace CSharpBasic
             AID._lastname = "Meenal";
             Console.WriteLine("Name {0}", AID._lastname);
             base._lastname = "Juhi";
-
+            Console.WriteLine("Name {0}", base._lastname);
+            this._lastname = "Neha";
+            Console.WriteLine("Name {0}", this._lastname);
+        }
+       
+        public void  p()
+        {
+            Console.WriteLine(base._lastname);
         }
     }
 }

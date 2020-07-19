@@ -152,11 +152,13 @@ namespace CSharpBasic
             }
             #endregion
 
-            Console.WriteLine("Hello");
-
+            #region Access Modifier
             AccessModifiersclass2 a2 = new AccessModifiersclass2();
             a2.PrintID();
-
+            a2.p();
+            a2.first_Name = "Meenal";
+            Console.WriteLine("Internal attribute : {0} ", a2.first_Name);
+            #endregion
 
         }
 
