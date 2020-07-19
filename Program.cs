@@ -152,6 +152,12 @@ namespace CSharpBasic
             }
             #endregion
 
+            Console.WriteLine("Hello");
+
+            AccessModifiersclass2 a2 = new AccessModifiersclass2();
+            a2.PrintID();
+
+
         }
 
         #region WhyEnumFunction
