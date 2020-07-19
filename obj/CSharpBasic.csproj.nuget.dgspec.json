@@ -4,6 +4,114 @@
     "C:\\Users\\Meenal\\source\\repos\\CSharpBasic\\CSharpBasic.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Meenal\\source\\repos\\AssemblyOne\\AssemblyOne.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Meenal\\source\\repos\\AssemblyOne\\AssemblyOne.csproj",
+        "projectName": "AssemblyOne",
+        "projectPath": "C:\\Users\\Meenal\\source\\repos\\AssemblyOne\\AssemblyOne.csproj",
+        "packagesPath": "C:\\Users\\Meenal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Meenal\\source\\repos\\AssemblyOne\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Meenal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Meenal\\source\\repos\\AssemblyTwo\\AssemblyTwo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Meenal\\source\\repos\\AssemblyTwo\\AssemblyTwo.csproj",
+        "projectName": "AssemblyTwo",
+        "projectPath": "C:\\Users\\Meenal\\source\\repos\\AssemblyTwo\\AssemblyTwo.csproj",
+        "packagesPath": "C:\\Users\\Meenal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Meenal\\source\\repos\\AssemblyTwo\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Meenal\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Meenal\\source\\repos\\AssemblyOne\\AssemblyOne.csproj": {
+                "projectPath": "C:\\Users\\Meenal\\source\\repos\\AssemblyOne\\AssemblyOne.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Meenal\\source\\repos\\CSharpBasic\\CSharpBasic.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,7 +134,14 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Meenal\\source\\repos\\AssemblyOne\\AssemblyOne.csproj": {
+                "projectPath": "C:\\Users\\Meenal\\source\\repos\\AssemblyOne\\AssemblyOne.csproj"
+              },
+              "C:\\Users\\Meenal\\source\\repos\\AssemblyTwo\\AssemblyTwo.csproj": {
+                "projectPath": "C:\\Users\\Meenal\\source\\repos\\AssemblyTwo\\AssemblyTwo.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

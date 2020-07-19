@@ -11,3 +11,8 @@ C:\Users\Meenal\source\repos\CSharpBasic\obj\Debug\netcoreapp3.1\CSharpBasic.Ass
 C:\Users\Meenal\source\repos\CSharpBasic\obj\Debug\netcoreapp3.1\CSharpBasic.dll
 C:\Users\Meenal\source\repos\CSharpBasic\obj\Debug\netcoreapp3.1\CSharpBasic.pdb
 C:\Users\Meenal\source\repos\CSharpBasic\obj\Debug\netcoreapp3.1\CSharpBasic.genruntimeconfig.cache
+C:\Users\Meenal\source\repos\CSharpBasic\bin\Debug\netcoreapp3.1\AssemblyOne.dll
+C:\Users\Meenal\source\repos\CSharpBasic\bin\Debug\netcoreapp3.1\AssemblyTwo.dll
+C:\Users\Meenal\source\repos\CSharpBasic\bin\Debug\netcoreapp3.1\AssemblyOne.pdb
+C:\Users\Meenal\source\repos\CSharpBasic\bin\Debug\netcoreapp3.1\AssemblyTwo.pdb
+C:\Users\Meenal\source\repos\CSharpBasic\obj\Debug\netcoreapp3.1\CSharpBasic.csproj.CopyComplete

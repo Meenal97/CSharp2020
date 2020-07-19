@@ -1,11 +1,49 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "AssemblyOne/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/AssemblyOne.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AssemblyOne.dll": {}
+        }
+      },
+      "AssemblyTwo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "AssemblyOne": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/AssemblyTwo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AssemblyTwo.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "AssemblyOne/1.0.0": {
+      "type": "project",
+      "path": "../AssemblyOne/AssemblyOne.csproj",
+      "msbuildProject": "../AssemblyOne/AssemblyOne.csproj"
+    },
+    "AssemblyTwo/1.0.0": {
+      "type": "project",
+      "path": "../AssemblyTwo/AssemblyTwo.csproj",
+      "msbuildProject": "../AssemblyTwo/AssemblyTwo.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "AssemblyOne >= 1.0.0",
+      "AssemblyTwo >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Meenal\\.nuget\\packages\\": {}
@@ -32,7 +70,14 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Meenal\\source\\repos\\AssemblyOne\\AssemblyOne.csproj": {
+              "projectPath": "C:\\Users\\Meenal\\source\\repos\\AssemblyOne\\AssemblyOne.csproj"
+            },
+            "C:\\Users\\Meenal\\source\\repos\\AssemblyTwo\\AssemblyTwo.csproj": {
+              "projectPath": "C:\\Users\\Meenal\\source\\repos\\AssemblyTwo\\AssemblyTwo.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,4 +1,6 @@
-﻿using CSharpBasic.Oops;
+﻿using AssemblyOne;
+using AssemblyTwo;
+using CSharpBasic.Oops;
 using CSharpBasic.TryCatch;
 using System;
 using System.IO;
@@ -159,6 +161,12 @@ namespace CSharpBasic
             a2.first_Name = "Meenal";
             Console.WriteLine("Internal attribute : {0} ", a2.first_Name);
             #endregion
+
+            AssemblyOneClassII aII = new AssemblyOneClassII();
+            aII.SampleMethod();
+
+            AssemblyTwoClassOne atwo = new AssemblyTwoClassOne();
+            atwo.SampleMethod();
 
         }
 
