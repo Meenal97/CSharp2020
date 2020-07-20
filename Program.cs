@@ -162,12 +162,16 @@ namespace CSharpBasic
             Console.WriteLine("Internal attribute : {0} ", a2.first_Name);
             #endregion
 
+            #region AssemblyAccessSpecifiers
             AssemblyOneClassII aII = new AssemblyOneClassII();
             aII.SampleMethod();
 
             AssemblyTwoClassOne atwo = new AssemblyTwoClassOne();
             atwo.SampleMethod();
+            #endregion
 
+            DerivedClassOne done = new DerivedClassOne();
+            
         }
 
         #region WhyEnumFunction
