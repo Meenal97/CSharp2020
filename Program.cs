@@ -171,7 +171,23 @@ namespace CSharpBasic
             #endregion
 
             DerivedClassOne done = new DerivedClassOne();
-            
+
+            EmployeeOne[] emp = new EmployeeOne[3];
+            emp[0] = new EmployeeOne();
+            emp[1] = new PartTimeEmployee();
+            emp[2] = new FullTimeEmployee();
+
+            foreach (EmployeeOne employee in emp)
+            {
+                employee._firstName = "Meenal";
+                employee._lastName = "Preet";
+            }
+
+
+            foreach (EmployeeOne employee in emp)
+            {
+                Console.WriteLine(employee.PrintFullName());
+            }
         }
 
         #region WhyEnumFunction
