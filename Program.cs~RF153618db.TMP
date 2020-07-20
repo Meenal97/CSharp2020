@@ -3,7 +3,6 @@ using AssemblyTwo;
 using CSharpBasic.Oops;
 using CSharpBasic.TryCatch;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 
@@ -194,11 +193,7 @@ namespace CSharpBasic
             }
             #endregion
 
-            Attributess a5 = new Attributess();
-            Attributess a6 = new Attributess();
-            int cal = a5.Calculator(new List<int>() { 12, 56, 88 });
-            Console.WriteLine("Calculator {0}", cal);
-            
+            A
 
         }
 
