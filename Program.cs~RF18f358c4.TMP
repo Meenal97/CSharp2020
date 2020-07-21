@@ -203,11 +203,8 @@ namespace CSharpBasic
             Console.WriteLine("Calculator {0}", cal);
             #endregion
 
-            #region Reflection
-            CustomerClass cOne = new CustomerClass();
-            Type T = cOne.GetType();
-         //   Type T = typeof(CustomerClass);
-         //   Type T = Type.GetType("CSharpBasic.CustomerClass");
+
+            Type T = Type.GetType("CSharpBasic.CustomerClass");
             Console.WriteLine("FullName {0} ", T.FullName);
             Console.WriteLine("Just a Name {0} ", T.Name);
             Console.WriteLine("Namespace {0} ", T.Namespace);
@@ -228,20 +225,18 @@ namespace CSharpBasic
 
             foreach (MethodInfo method in Methods)
             {
-                Console.WriteLine(method.ReturnType.Name + " "+ method.Name  + " " + method.GetParameters());
+                Console.WriteLine(method.ReturnType.Name + " "+ method.Name  );
             }
 
             Console.WriteLine();
             Console.WriteLine();
-            Console.WriteLine("Constructor-------------------------------------------------------------------------------------");
+            Console.WriteLine("Methods-------------------------------------------------------------------------------------");
             ConstructorInfo[] Constructors = T.GetConstructors();
 
             foreach (ConstructorInfo constructor in Constructors)
             {
-                Console.WriteLine(constructor.ToString());
+                Console.WriteLine(method.Name);
             }
-            #endregion
-
 
         }
 

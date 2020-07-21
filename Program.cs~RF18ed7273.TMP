@@ -3,6 +3,8 @@ using AssemblyTwo;
 using CSharpBasic.Oops;
 using CSharpBasic.TryCatch;
 using System;
+using System.Collections.Generic;
+using System.Reflection;
 using System.IO;
 using System.Threading;
 
@@ -193,7 +195,38 @@ namespace CSharpBasic
             }
             #endregion
 
-            A
+            #region Attributes
+            Attributess a5 = new Attributess();
+            Attributess a6 = new Attributess();
+            int cal = a5.Calculator(new List<int>() { 12, 56, 88 });
+            int cal2 = a6.Calculator(new List<int>() {35,67,77 });
+            Console.WriteLine("Calculator {0}", cal);
+            #endregion
+
+
+            Type T = Type.GetType("CSharpBasic.CustomerClass");
+            Console.WriteLine("FullName {0} ", T.FullName);
+            Console.WriteLine("Just a Name {0} ", T.Name);
+            Console.WriteLine("Namespace {0} ", T.Namespace);
+
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Properties-------------------------------------------------------------------------------------");
+            PropertyInfo[] properties = T.GetProperties();
+
+            foreach(PropertyInfo property in properties)
+            {
+                Console.WriteLine("Proprty Name {0} , Return Type {1}", property.Name, property.PropertyType.Name);
+            }
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Methods-------------------------------------------------------------------------------------");
+            MethodInfo[] Methods = T.GetMethods();
+
+            foreach (MethodInfo method in Methods)
+            {
+                Console.WriteLine("Proprty Name {0}", method.Name);
+            }
 
         }
 
