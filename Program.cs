@@ -242,6 +242,23 @@ namespace CSharpBasic
             }
             #endregion
 
+            #region Generics
+            bool Equal = Generics.AreEqual<int>(2, 6);
+            if(Equal)
+            {
+                Console.WriteLine("Equal");
+            }
+            else
+            {
+                Console.WriteLine("Not eqaul");
+            }
+            #endregion
+
+            ToStringMethod str = new ToStringMethod();
+            str.FirstName = "ABC";
+            str.LastName = "CS";
+
+            Console.WriteLine(str.ToString());
 
         }
 
