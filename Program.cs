@@ -254,11 +254,25 @@ namespace CSharpBasic
             }
             #endregion
 
+            #region Override ToString
             ToStringMethod str = new ToStringMethod();
             str.FirstName = "ABC";
             str.LastName = "CS";
 
             Console.WriteLine(str.ToString());
+            #endregion
+
+            OverideEquals o = new OverideEquals();
+            o.i = 101;
+            o.j = 101;
+
+            OverideEquals o2 = new OverideEquals();
+            o2.i = 101;
+            o2.j = 101;
+
+            Console.WriteLine(o == o2);
+
+            Console.WriteLine((o).Equals(o2));
 
         }
 
