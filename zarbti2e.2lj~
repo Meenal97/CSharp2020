@@ -278,8 +278,8 @@ namespace CSharpBasic
 
             Program p77 = null;
             //    Console.WriteLine(p77.ToString()); // Throws an exception
-            string str77 = Convert.ToString(p77); // 
-            Console.WriteLine(str77);
+            Console.WriteLine(Convert.ToString(p77));
+
 
 
         }
