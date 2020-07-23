@@ -284,7 +284,6 @@ namespace CSharpBasic
             Console.WriteLine(str77);
             #endregion
 
-            #region String Builder
             StringBuilder str56 = new StringBuilder("c# ");
             str56.Append("Tutorail ");
             str56.Append("For ");
@@ -292,12 +291,11 @@ namespace CSharpBasic
             Console.WriteLine(str56);
 
             StringBuilder str78 = new StringBuilder();
-            for(int i=0;i<10000;i++)
+            for(int i=0;i<100000;i++)
             {
-               str78.Append(i.ToString()).Append(" ");
+               str78 i.ToString();
             }
-            Console.WriteLine(str78);
-            #endregion
+            
 
         }
 
