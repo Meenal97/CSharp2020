@@ -299,6 +299,16 @@ namespace CSharpBasic
             Console.WriteLine(str78);
             #endregion
 
+            #region Partial Class
+            CustomerPart c22 = new CustomerPart();
+            c22.FirstName = "Work";
+            c22.LastName = "Works";
+            string full_name = c22.GetFullNameCust();
+            Console.WriteLine("Partial Class {0} ", full_name);
+            #endregion
+
+
+
         }
 
         #region WhyEnumFunction
