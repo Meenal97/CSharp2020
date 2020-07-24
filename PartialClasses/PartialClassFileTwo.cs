@@ -10,5 +10,7 @@ namespace CSharpBasic.PartialClasses
         {
             Console.WriteLine("Sample Partial Method");
         }
+
+
     }
 }
