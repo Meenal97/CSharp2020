@@ -8,6 +8,7 @@ using System.Reflection;
 using System.Text;
 using System.IO;
 using System.Threading;
+using CSharpBasic.PartialClasses;
 
 namespace CSharpBasic
 {
@@ -307,7 +308,10 @@ namespace CSharpBasic
             Console.WriteLine("Partial Class {0} ", full_name);
             #endregion
 
-
+            #region Partial Class 2
+            SamplePartial sp = new SamplePartial();
+            sp.CustMethod();
+            #endregion
 
         }
 
