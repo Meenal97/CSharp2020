@@ -313,6 +313,11 @@ namespace CSharpBasic
             sp.CustMethod();
             #endregion
 
+            #region Partial Method
+            PartialClass PC = new PartialClass();
+            PC.PublicMethod();
+            #endregion
+
         }
 
         #region WhyEnumFunction
