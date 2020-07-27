@@ -16,3 +16,16 @@ C:\Users\Meenal\source\repos\CSharpBasic\bin\Debug\netcoreapp3.1\AssemblyTwo.dll
 C:\Users\Meenal\source\repos\CSharpBasic\bin\Debug\netcoreapp3.1\AssemblyOne.pdb
 C:\Users\Meenal\source\repos\CSharpBasic\bin\Debug\netcoreapp3.1\AssemblyTwo.pdb
 C:\Users\Meenal\source\repos\CSharpBasic\obj\Debug\netcoreapp3.1\CSharpBasic.csproj.CopyComplete
+C:\Users\Meenal\source\BasicOfCSharp\CSharp2020\obj\Debug\netcoreapp3.1\CSharpBasic.dll
+C:\Users\Meenal\source\BasicOfCSharp\CSharp2020\obj\Debug\netcoreapp3.1\CSharpBasic.pdb
+C:\Users\Meenal\source\BasicOfCSharp\CSharp2020\bin\Debug\netcoreapp3.1\CSharpBasic.exe
+C:\Users\Meenal\source\BasicOfCSharp\CSharp2020\bin\Debug\netcoreapp3.1\CSharpBasic.deps.json
+C:\Users\Meenal\source\BasicOfCSharp\CSharp2020\bin\Debug\netcoreapp3.1\CSharpBasic.runtimeconfig.json
+C:\Users\Meenal\source\BasicOfCSharp\CSharp2020\bin\Debug\netcoreapp3.1\CSharpBasic.runtimeconfig.dev.json
+C:\Users\Meenal\source\BasicOfCSharp\CSharp2020\bin\Debug\netcoreapp3.1\CSharpBasic.dll
+C:\Users\Meenal\source\BasicOfCSharp\CSharp2020\bin\Debug\netcoreapp3.1\CSharpBasic.pdb
+C:\Users\Meenal\source\BasicOfCSharp\CSharp2020\obj\Debug\netcoreapp3.1\CSharpBasic.csprojAssemblyReference.cache
+C:\Users\Meenal\source\BasicOfCSharp\CSharp2020\obj\Debug\netcoreapp3.1\CSharpBasic.csproj.CoreCompileInputs.cache
+C:\Users\Meenal\source\BasicOfCSharp\CSharp2020\obj\Debug\netcoreapp3.1\CSharpBasic.AssemblyInfoInputs.cache
+C:\Users\Meenal\source\BasicOfCSharp\CSharp2020\obj\Debug\netcoreapp3.1\CSharpBasic.AssemblyInfo.cs
+C:\Users\Meenal\source\BasicOfCSharp\CSharp2020\obj\Debug\netcoreapp3.1\CSharpBasic.genruntimeconfig.cache

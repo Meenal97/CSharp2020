@@ -7,41 +7,14 @@
   "targets": {
     ".NETCoreApp,Version=v3.1": {
       "CSharpBasic/1.0.0": {
-        "dependencies": {
-          "AssemblyOne": "1.0.0",
-          "AssemblyTwo": "1.0.0"
-        },
         "runtime": {
           "CSharpBasic.dll": {}
-        }
-      },
-      "AssemblyOne/1.0.0": {
-        "runtime": {
-          "AssemblyOne.dll": {}
-        }
-      },
-      "AssemblyTwo/1.0.0": {
-        "dependencies": {
-          "AssemblyOne": "1.0.0"
-        },
-        "runtime": {
-          "AssemblyTwo.dll": {}
         }
       }
     }
   },
   "libraries": {
     "CSharpBasic/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "AssemblyOne/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "AssemblyTwo/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

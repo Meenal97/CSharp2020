@@ -6,8 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AssemblyOne\AssemblyOne.csproj" />
-    <ProjectReference Include="..\AssemblyTwo\AssemblyTwo.csproj" />
+    
   </ItemGroup>
 
 </Project>
