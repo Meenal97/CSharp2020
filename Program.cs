@@ -332,7 +332,15 @@ namespace CSharpBasic
             Console.WriteLine("Name = {0} ", comp[2]);
             Console.WriteLine("Name = {0} ", comp[3]);
             Console.WriteLine("Name = {0} ", comp[4]);
+
+
+
             #endregion
+
+
+            Console.WriteLine("Total Male Empolyee {0}", comp["Male"]);
+            comp["Male"] = "Female";
+            Console.WriteLine("Total Female Empolyee {0}", comp["Female"]);
         }
 
         #region WhyEnumFunction

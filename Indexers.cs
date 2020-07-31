@@ -41,5 +41,23 @@ namespace CSharpBasic
                 listEmp.FirstOrDefault(emp => emp.EmployeeID == empID).Name = value;
             }
         }
+
+        public string this[string Gender]
+        {
+            get
+            {
+                return listEmp.Count(emp => emp.Gender == Gender).ToString();
+            }
+            set
+            {
+                foreach(Employee23 emp in listEmp)
+                {
+                    if(emp.Gender == Gender)
+                    {
+                        emp.Gender = value;
+                    }
+                }
+            }
+        }
     }
 }
