@@ -373,6 +373,60 @@ namespace CSharpBasic
             NamedParameter.test(2, c: 23);
             #endregion
 
+            #region Dictionary
+            Customer67 c_1 = new Customer67
+            {
+                ID = 101,
+                Name = "Mark",
+                Salary = 3000
+            };
+            Customer67 c_2 = new Customer67
+            {
+                ID = 102,
+                Name = "Pam",
+                Salary = 3000
+            };
+            Customer67 c_3 = new Customer67
+            {
+                ID = 103,
+                Name = "Sam",
+                Salary = 3000
+            };
+            Dictionary<int, Customer67> CustomerDictionary = new Dictionary<int, Customer67>();
+            CustomerDictionary.Add(c_1.ID, c_1);
+            CustomerDictionary.Add(c_2.ID, c_2);
+            CustomerDictionary.Add(c_3.ID, c_3);
+            Customer67 cust_1 =  CustomerDictionary[101];
+            Console.WriteLine("ID {0}, Name {1} , Salary {2}", cust_1.ID, cust_1.Name, cust_1.Salary);
+            Console.WriteLine("Display Alll Customers---------------------------");
+            foreach(KeyValuePair<int, Customer67> CustmoerKeyValuePair in CustomerDictionary)
+            {
+                Console.WriteLine("ID {0}", CustmoerKeyValuePair.Key);
+                Customer67 cust67 = CustmoerKeyValuePair.Value;
+                Console.WriteLine("Name {0} Salary {1}", cust67.Name , cust67.Salary);
+                Console.WriteLine();
+                Console.WriteLine();
+            }
+            Console.WriteLine("------------------------------------------------------");
+            foreach (var CustmoerKeyValuePair in CustomerDictionary)
+            {
+                Console.WriteLine("ID {0}", CustmoerKeyValuePair.Key);
+                Customer67 cust67 = CustmoerKeyValuePair.Value;
+                Console.WriteLine("Name {0} Salary {1}", cust67.Name, cust67.Salary);
+                Console.WriteLine();
+                Console.WriteLine();
+            }
+            Console.WriteLine("----------------------Only keys--------------------------------");
+            foreach (int Keys in CustomerDictionary.Keys)
+            {
+                Console.WriteLine(Keys);
+            }
+            Console.WriteLine("----------------------Only Values--------------------------------");
+            foreach (Customer67 cust67 in CustomerDictionary.Values)
+            {
+                Console.WriteLine("Name {0} Salary {1} ID {2}", cust67.Name, cust67.Salary, cust67.ID);
+            }
+            #endregion
 
         }
 
