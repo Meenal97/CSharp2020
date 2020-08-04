@@ -360,6 +360,20 @@ namespace CSharpBasic
             Console.WriteLine("Result {0}", result3);
             Console.WriteLine("Result {0}", result4);
             #endregion
+
+            #region Making Method Parameter Optional Using Optional Parameter
+            int result6, result7;
+            result6 = DefualtParameter.AddNumbers(78, 21);
+            result7 = DefualtParameter.AddNumbers(24, 23, new int[] { 35, 35 });
+            Console.WriteLine("Result {0}", result6);
+            Console.WriteLine("Result {0}", result7);
+            #endregion
+
+            #region Named Parameter
+            NamedParameter.test(2, c: 23);
+            #endregion
+
+
         }
 
         #region WhyEnumFunction
