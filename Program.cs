@@ -344,15 +344,22 @@ namespace CSharpBasic
             Console.WriteLine("Total Female Empolyee {0}", comp["Female"]);
             #endregion
 
-            #region Making Method Parameter Optional
-            int result, result1;
+            #region Making Method Parameter Optional Using Parameter Arrays
+            int result, result1, result2;
             result = OptionalParameter1.AddNumbers(23, 27);
             result1 = OptionalParameter1.AddNumbers(23, 27, 45,5);
+            result2 = OptionalParameter1.AddNumbers(23, 27, new object[] { 67, 31, 67 } );
             Console.WriteLine("Result {0} ", result);
             Console.WriteLine("Result {0} ", result1);
             #endregion
 
-
+            #region Making Method Parameter Optional Using Method Overloading
+            int result3, result4;
+            result3 = MethodOverloading.AddNumbers(12, 38);
+            result4 = MethodOverloading.AddNumbers(12, 35, new int[] { 24, 67 });
+            Console.WriteLine("Result {0}", result3);
+            Console.WriteLine("Result {0}", result4);
+            #endregion
         }
 
         #region WhyEnumFunction
