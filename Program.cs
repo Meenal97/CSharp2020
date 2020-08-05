@@ -11,6 +11,7 @@ using System.Threading;
 using CSharpBasic.PartialClasses;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
+using System.Diagnostics.CodeAnalysis;
 
 namespace CSharpBasic
 {
@@ -532,7 +533,17 @@ namespace CSharpBasic
                 Console.WriteLine("ID {0}, Name {1}, Salary {2}", c5.ID, c5.Name, c5.Salary);
             }
 
-            
+
+            Console.WriteLine("After Sorting By Name---------------------------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine();
+            SortByName sortByName = new SortByName();
+            Customers.Sort(sortByName);
+            foreach (Customer67 c5 in Customers)
+            {
+                Console.WriteLine("ID {0}, Name {1}, Salary {2}", c5.ID, c5.Name, c5.Salary);
+            }
+
         }
 
         #region WhyEnumFunction
@@ -570,6 +581,16 @@ namespace CSharpBasic
         }
         #endregion
 
+    }
+
+
+
+    public class SortByName : IComparer<Customer67>
+    {
+        public int Compare(Customer67 x,Customer67 y)
+        {
+            return x.Name.CompareTo(y.Name);
+        }
     }
 
 

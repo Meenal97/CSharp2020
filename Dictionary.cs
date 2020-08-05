@@ -13,11 +13,13 @@ namespace CSharpBasic
 
        public int CompareTo(Customer67 other)
         {
-            if (this.Salary > other.Salary)
-                return 1;
-            else if (this.Salary < other.Salary)
-                return -1;
-            else return 0;
+            //if (this.Salary > other.Salary)
+            //    return 1;
+            //else if (this.Salary < other.Salary)
+            //    return -1;
+            //else return 0;
+
+            return this.Salary.CompareTo(other.Salary);
         }
     }
 }
