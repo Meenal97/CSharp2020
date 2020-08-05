@@ -9,6 +9,7 @@ using System.Text;
 using System.IO;
 using System.Threading;
 using CSharpBasic.PartialClasses;
+using System.Linq;
 
 namespace CSharpBasic
 {
@@ -384,7 +385,7 @@ namespace CSharpBasic
             {
                 ID = 102,
                 Name = "Pam",
-                Salary = 3000
+                Salary = 1000
             };
             Customer67 c_3 = new Customer67
             {
@@ -392,6 +393,7 @@ namespace CSharpBasic
                 Name = "Sam",
                 Salary = 3000
             };
+
             Dictionary<int, Customer67> CustomerDictionary = new Dictionary<int, Customer67>();
             CustomerDictionary.Add(c_1.ID, c_1);
             CustomerDictionary.Add(c_2.ID, c_2);
@@ -399,35 +401,36 @@ namespace CSharpBasic
             Customer67 cust_1 =  CustomerDictionary[101];
             Console.WriteLine("ID {0}, Name {1} , Salary {2}", cust_1.ID, cust_1.Name, cust_1.Salary);
             Console.WriteLine("Display Alll Customers---------------------------");
-            foreach(KeyValuePair<int, Customer67> CustmoerKeyValuePair in CustomerDictionary)
-            {
-                Console.WriteLine("ID {0}", CustmoerKeyValuePair.Key);
-                Customer67 cust67 = CustmoerKeyValuePair.Value;
-                Console.WriteLine("Name {0} Salary {1}", cust67.Name , cust67.Salary);
-                Console.WriteLine();
-                Console.WriteLine();
-            }
-            Console.WriteLine("------------------------------------------------------");
-            foreach (var CustmoerKeyValuePair in CustomerDictionary)
-            {
-                Console.WriteLine("ID {0}", CustmoerKeyValuePair.Key);
-                Customer67 cust67 = CustmoerKeyValuePair.Value;
-                Console.WriteLine("Name {0} Salary {1}", cust67.Name, cust67.Salary);
-                Console.WriteLine();
-                Console.WriteLine();
-            }
-            Console.WriteLine("----------------------Only keys--------------------------------");
-            foreach (int Keys in CustomerDictionary.Keys)
-            {
-                Console.WriteLine(Keys);
-            }
-            Console.WriteLine("----------------------Only Values--------------------------------");
-            foreach (Customer67 cust67 in CustomerDictionary.Values)
-            {
-                Console.WriteLine("Name {0} Salary {1} ID {2}", cust67.Name, cust67.Salary, cust67.ID);
-            }
             #endregion
 
+            #region TryGetValue
+            Customer67 cut89;
+            if(CustomerDictionary.TryGetValue(101, out cut89))
+            {
+                Console.WriteLine("ID {0}, Name {1} , Salary {2}", cut89.ID, cut89.Name, cut89.Salary);
+            }
+            else
+            {
+                Console.WriteLine("There is no Key");
+            }
+            #endregion  
+
+            Console.WriteLine("Total {0} ",CustomerDictionary.Count);
+            Console.WriteLine("Total {0} ", CustomerDictionary.Count(KeyValuePair => KeyValuePair.Value.Salary > 2000));
+
+            Customer67[] cust67 = new Customer67[3];
+            cust67[0] = c_1;
+            cust67[1] = c_2;
+            cust67[2] = c_3;
+
+           Dictionary<int, Customer67> dictust = cust67.ToDictionary(cust => cust.ID, cust => cust);
+           Console.WriteLine("Array Into Dictionary-------------------------------------------------");
+           foreach(KeyValuePair<int, Customer67> kvp in dictust)
+            {
+                Console.WriteLine("ID {0}", kvp.Key);
+                Customer67 c1 = kvp.Value;
+                Console.WriteLine("Name {0}, Salary {1} ", c1.Name, c1.Salary);
+            }
         }
 
         #region WhyEnumFunction
