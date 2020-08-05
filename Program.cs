@@ -10,6 +10,7 @@ using System.IO;
 using System.Threading;
 using CSharpBasic.PartialClasses;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 
 namespace CSharpBasic
 {
@@ -391,7 +392,26 @@ namespace CSharpBasic
             {
                 ID = 103,
                 Name = "Sam",
+                Salary = 500
+            };
+                       
+            Customer67 c_4 = new Customer67
+            {
+                ID = 104,
+                Name = "Mark1",
                 Salary = 3000
+            };
+            Customer67 c_5 = new Customer67
+            {
+                ID = 105,
+                Name = "Pam",
+                Salary = 1000
+            };
+            Customer67 c_6 = new Customer67
+            {
+                ID = 106,
+                Name = "Sam",
+                Salary = 300
             };
 
             Dictionary<int, Customer67> CustomerDictionary = new Dictionary<int, Customer67>();
@@ -415,6 +435,7 @@ namespace CSharpBasic
             }
             #endregion  
 
+            #region Dictionary 2
             Console.WriteLine("Total {0} ",CustomerDictionary.Count);
             Console.WriteLine("Total {0} ", CustomerDictionary.Count(KeyValuePair => KeyValuePair.Value.Salary > 2000));
 
@@ -431,6 +452,87 @@ namespace CSharpBasic
                 Customer67 c1 = kvp.Value;
                 Console.WriteLine("Name {0}, Salary {1} ", c1.Name, c1.Salary);
             }
+            #endregion
+
+            #region List
+            List<Customer67> Customers = new List<Customer67>(2);
+               Customers.Add(c_1);
+               Customers.Add(c_2);
+               Customers.Add(c_3);
+               Customers.Add(c_4);
+             Customers.Add(c_5);
+                Customers.Add(c_6);
+
+            Customer67 c = Customers[0];
+            Console.WriteLine("ID {0}, Name {1}, Salary {2}", c.ID, c.Name, c.Salary);
+            Console.WriteLine("-------------------------------------------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine();
+            foreach(Customer67 c2 in Customers)
+            {
+                Console.WriteLine("ID {0}, Name {1}, Salary {2}", c2.ID, c2.Name, c2.Salary);
+            }
+
+            // Exists
+            if(Customers.Exists(cust => cust.Name.StartsWith("Z")))
+            {
+                Console.WriteLine("User exits in the list");
+                Console.WriteLine();
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine("User does not exits in the list");
+                Console.WriteLine();
+                Console.WriteLine();
+            }
+
+            //Find or FindLast
+            Customer67 c3 = Customers.FindLast(cust => cust.Salary > 2000);
+            Console.WriteLine("ID {0} ,Name {1}, Salary {2}", c3.ID, c3.Name, c3.Salary);
+
+            //Find
+            Console.WriteLine("List of all customers ------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine();
+            List<Customer67> listOfCust = Customers.FindAll(cust => cust.Salary < 2000);
+            foreach(Customer67 l in listOfCust)
+            {
+                Console.WriteLine("ID {0}, Name {1}, Salary {2}", l.ID, l.Name, l.Salary);
+            }
+
+            #endregion
+
+            #region List To Dictionary
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("____________________________________________________________________");
+            Dictionary<int, Customer67> DictToList = Customers.ToDictionary(x => x.ID);
+            foreach(KeyValuePair<int, Customer67> d in DictToList)
+            {
+                Console.WriteLine("ID {0}", d.Key);
+            }
+            #endregion
+
+            //  AddRange  - Adds One list to another
+            // GetRange 
+            Console.WriteLine();
+            List<Customer67> list67 = Customers.GetRange(1, 1);
+            foreach (Customer67 l in list67)
+            {
+                Console.WriteLine("ID {0}, Name {1}, Salary {2}", l.ID, l.Name, l.Salary);
+            }
+
+            Console.WriteLine("After Sorting---------------------------------------------------------");
+            Console.WriteLine();
+            Console.WriteLine();
+            Customers.Sort();
+            foreach (Customer67 c5 in Customers)
+            {
+                Console.WriteLine("ID {0}, Name {1}, Salary {2}", c5.ID, c5.Name, c5.Salary);
+            }
+
+            
         }
 
         #region WhyEnumFunction
