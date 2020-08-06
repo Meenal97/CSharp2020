@@ -578,6 +578,22 @@ namespace CSharpBasic
             //Contains
             #endregion
 
+            #region Queue
+            Queue<Customer67> queueCustomers = new Queue<Customer67>();
+            queueCustomers.Enqueue(c_1);  // Add an item to queue
+            queueCustomers.Enqueue(c_2);
+            queueCustomers.Enqueue(c_3);
+            queueCustomers.Enqueue(c_4);
+            queueCustomers.Enqueue(c_5);
+
+            Customer67 c_48 = queueCustomers.Peek();
+            Console.WriteLine("Peek ID - {0}, Name - {1}, Salary - {2}", c_48.ID, c_48.Name, c_48.Salary); 
+
+            Customer67 c_47 = queueCustomers.Dequeue();
+
+            Console.WriteLine("Remove an item from queue ID - {0}, Name - {1}, Salary - {2}", c_47.ID, c_47.Name, c_47.Salary); //Remove an item
+            #endregion
+
 
         }
 
