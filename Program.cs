@@ -12,6 +12,7 @@ using CSharpBasic.PartialClasses;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Diagnostics.CodeAnalysis;
+using System.Collections.ObjectModel;
 
 namespace CSharpBasic
 {
@@ -457,12 +458,12 @@ namespace CSharpBasic
 
             #region List
             List<Customer67> Customers = new List<Customer67>(2);
-               Customers.Add(c_1);
-               Customers.Add(c_2);
-               Customers.Add(c_3);
-               Customers.Add(c_4);
-             Customers.Add(c_5);
-                Customers.Add(c_6);
+            Customers.Add(c_1);
+            Customers.Add(c_2);
+            Customers.Add(c_3);
+            Customers.Add(c_4);
+            Customers.Add(c_5);
+            Customers.Add(c_6);
 
             Customer67 c = Customers[0];
             Console.WriteLine("ID {0}, Name {1}, Salary {2}", c.ID, c.Name, c.Salary);
@@ -515,6 +516,7 @@ namespace CSharpBasic
             }
             #endregion
 
+            #region Sorting a Complex Type
             //  AddRange  - Adds One list to another
             // GetRange 
             Console.WriteLine();
@@ -543,7 +545,32 @@ namespace CSharpBasic
             {
                 Console.WriteLine("ID {0}, Name {1}, Salary {2}", c5.ID, c5.Name, c5.Salary);
             }
+            #endregion
 
+            #region ReadOnly
+            Console.WriteLine("Readonly ---------------------------------------------------------");
+            ReadOnlyCollection<Customer67> readOnlyCustomers = Customers.AsReadOnly();
+            foreach(Customer67 c45 in readOnlyCustomers)
+            {
+                Console.WriteLine("ID {0}", c45.ID);
+            }
+            #endregion
+
+            #region Stack
+            Stack<Customer67> stackCustomers = new Stack<Customer67>();
+            stackCustomers.Push(c_1);
+            stackCustomers.Push(c_2);
+            stackCustomers.Push(c_3);
+            stackCustomers.Push(c_4);
+            stackCustomers.Push(c_5);
+         
+
+            Customer67 c_45 = stackCustomers.Pop();
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Stack - ID {0}, Name {1}, Salary {2}", c_45.ID, c_45.Name, c_45.Salary);
+            Console.WriteLine("Items left in stack {0}", stackCustomers.Count);
+            #endregion
         }
 
         #region WhyEnumFunction
