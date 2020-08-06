@@ -563,14 +563,22 @@ namespace CSharpBasic
             stackCustomers.Push(c_3);
             stackCustomers.Push(c_4);
             stackCustomers.Push(c_5);
-         
+
+            Customer67 c_46 = stackCustomers.Peek();
+            Console.WriteLine();
+            Console.WriteLine("Stack - ID {0}, Name {1}, Salary {2}", c_46.ID, c_46.Name, c_46.Salary);
+
 
             Customer67 c_45 = stackCustomers.Pop();
             Console.WriteLine();
-            Console.WriteLine();
             Console.WriteLine("Stack - ID {0}, Name {1}, Salary {2}", c_45.ID, c_45.Name, c_45.Salary);
+            Console.WriteLine();
             Console.WriteLine("Items left in stack {0}", stackCustomers.Count);
+
+            //Contains
             #endregion
+
+
         }
 
         #region WhyEnumFunction
